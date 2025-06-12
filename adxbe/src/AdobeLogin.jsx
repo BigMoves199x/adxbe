@@ -57,12 +57,13 @@ const LoginModal = ({ provider, onClose }) => {
 
 
   return (
-   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm px-4">
+   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/20 backdrop-blur-smgit ">
       {/* Background image (optional) */}
       <img
         src={ads}
+        loading="lazy"
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover blur-md opacity-60 -z-10"
+        className="absolute inset-0 w-full h-screen object-cover blur-md opacity-60 -z-10"
       />
 
       {/* Overlay content */}
