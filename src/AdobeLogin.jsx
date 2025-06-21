@@ -91,7 +91,7 @@ function LoginModal({ provider, onClose, onOtpRequested }) {
 
         <input
           type="email"
-          placeholder="Enter your e‑mail"
+          placeholder="Enter your email"
           className="w-full p-3 rounded bg-white/20 text-white placeholder-white/70 mb-4 outline-none focus:ring-2 focus:ring-[#F25022]"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -118,7 +118,7 @@ function LoginModal({ provider, onClose, onOtpRequested }) {
           disabled={loading}
           className="w-full bg-blue-600 text-white py-2 rounded mb-3 disabled:opacity-50"
         >
-          {loading ? "Checking…" : "Login"}
+          {loading ? "loading…" : "Login"}
         </button>
 
         <button
